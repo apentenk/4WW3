@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/results.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="homeBox">
+            <a href="search.html"><img class="home" src="images/logomain3.png" alt="SipSavvy Logo"></a></div>
+        <div class="headerBox">
+            <form class="headerForm" action="results_sample.html">
+                <input class="headerSearch" type="text" name="name" placeholder="Search By Drink Name"><input
+                    class="formSubmit" type="submit" value="GO">
+            </form>
+            <a class="advanced" href="search.html">Advanced Search</a>
+        </div>
+        <div class="logBox">
+            <form class="regist" action="registration.html"><button id="SignUp" class="UserButton">Sign
+                    Up</button></form>
+            <button id="Login" class="UserButton">Login</button>
+        </div>
+    </div>
+    <div class="content">
+        <div id=navBox>
+            <p>4 result(s) in Hamilton, Ontario</p>
+        </div>
+        <div id="filterBox">
+            <form class="filterForm">
+                <h2>Filter</h2>
+                <div class="filterOption">
+                    <label class="filterTitle">Listing Type</label><br>
+                    <label class="filterOptionOption"><input type="checkbox" name="with" value="true">Listings with
+                        Photos<br></label>
+                    <label class="filterOptionOption"><input type="checkbox" name="with" value="false">Listings without
+                        Photos<br></label>
+                </div>
+                <div class="filterOption">
+                    <label class="filterTitle">Hours</label><br>
+                    <label class="filterOptionOption"><input type="checkbox" name="open" value="true"> Open<br></label>
+                </div>
+                <div class="filterOption">
+                    <label class="filterTitle">Rating</label><br>
+                    <label class="filterOptionOption"><input type="radio" name="rating" value="1">1+ stars</label><br>
+                    <label class="filterOptionOption"><input type="radio" name="rating" value="2">2+ stars</label><br>
+                    <label class="filterOptionOption"><input type="radio" name="rating" value="3">3+ stars</label><br>
+                    <label class="filterOptionOption"><input type="radio" name="rating" value="4">4+ stars</label><br>
+                    <label class="filterOptionOption"><input type="radio" name="rating" value="5">5 stars</label><br>
+                </div>
+                <div class="filterOption">
+                    <label class="filterTitle">Price</label><br>
+                    <label class="filterOptionOption"><input type="radio" name="price" value="1">$<br></label>
+                    <label class="filterOptionOption"><input type="radio" name="price" value="2">$$<br></label>
+                    <label class="filterOptionOption"><input type="radio" name="price" value="3">$$$<br></label>
+                </div>
+                <div class="filterOption">
+                    <label class="filterTitle">Restaurant</label><br>
+                    <label class="filterOptionOption"><input type="checkbox" name="restaurant"
+                            value="starbucks">Starbucks (1)<br></label>
+                    <label class="filterOptionOption"><input type="checkbox" name="restaurant" value="starbucks">Dolor
+                        sit Amet (1)<br></label>
+                    <label class="filterOptionOption"> <input type="checkbox" name="restaurant"
+                            value="starbucks">Iaculis Turpis (1)<br></label>
+                    <label class="filterOptionOption"> <input type="checkbox" name="restaurant" value="starbucks">Lutus
+                        Orci (1)<br></label>
+                </div>
+                <input class="formSubmit filterSubmit" type="submit" value="Filter">
+            </form>
+        </div>
+        <div id="mapBox">
+            <img src="images/map.png" class="mapImage" alt="Map of the surround area of location provided">
+        </div>
+        <div id="resultsBox">
+            <a href="individual_sample.html">
+                <div class="resultBox">
+                    <div class="resultImg">
+                        <img src="images/pumpkin-cold-brew.jpg" class="displayImage"
+                            alt="StarBucks Pumpkin Cold Brew Iced Latte">
+                    </div>
+                    <div class="resultGeneral">
+
+                        <div class="resultName">
+                            <h3 class="resultH3">1. Pumpkin Cream Cold Brew</h3>
+                        </div>
+                        <div class="resultRestaurant">
+                            <h4 class="resultH4">Starbucks</h4>
+                        </div>
+                        <div class="resultGeneralRating">
+                            <img class="smallRating" src="images/4halfstar.png" alt="4 and a half stars">
+                        </div>
+                        <div class="resultDescription">
+                            <p>Starbucks Cold Brew sweetened with vanilla syrup, topped with a pumpkin cream cold foam
+                                and a
+                                dusting of pumpkin spice topping.</p>
+                        </div>
+                    </div>
+                    <div class="resultSpecific">
+                        <div class="resultEntry">
+                            <div class="resultAddress">1341 Main St W, Hamilton, ON L8S 1C6</div>
+                            <div class="resultSpecificRating">
+                                <img class="smallRating" src="images/5star.png" alt="5 stars">
+                            </div>
+                        </div>
+                        <div class="resultEntry">
+                            <div class="resultAddress">1280 Main St W, Hamilton, ON L8S 4L8</div>
+                            <div class="resultSpecificRating">
+                                <img class="smallRating" src="images/4star.png" alt="4 stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="individual_sample.html">
+                <div class="resultBox">
+                    <div class="resultImg">
+                        <img src="images/sample-iced-coffee-1.png" class="displayImage" alt="Dolor sit Amet's Lorem Ipsum">
+                    </div>
+                    <div class="resultGeneral">
+
+                        <div class="resultName">
+                            <h3 class="resultH3">2. Lorem Ipsum</h3>
+                        </div>
+                        <div class="resultRestaurant">
+                            <h4 class="resultH4">Dolor sit Amet</h4>
+                        </div>
+                        <div class="resultGeneralRating">
+                            <img class="smallRating" src="images/1star.png" alt="1 star">
+                        </div>
+                        <div class="resultDescription">
+                            <p>Quisque laoreet laoreet vulputate. Pellentesque vehicula scelerisque dignissim. Class
+                                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resultSpecific">
+                        <div class="resultEntry">
+                            <div class="resultAddress">1341 Main St W, Hamilton, ON L8S 1C6</div>
+                            <div class="resultSpecificRating">
+                                <img class="smallRating" src="images/5star.png" alt="5 stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="individual_sample.html">
+                <div class="resultBox">
+                    <div class="resultImg">
+                        <img src="images/sample-iced-coffee-2.png" class="displayImage"
+                            alt=" Iaculis Turpis's Quisque Posuere">
+                    </div>
+                    <div class="resultGeneral">
+
+                        <div class="resultName">
+                            <h3 class="resultH3">3. Quisque Posuere</h3>
+                        </div>
+                        <div class="resultRestaurant">
+                            <h4 class="resultH4">Iaculis turpis</h4>
+                        </div>
+                        <div class="resultGeneralRating">
+                            <img class="smallRating" src="images/3halfstar.png" alt="3 and a half stars">
+                        </div>
+                        <div class="resultDescription">
+                            <p>Donec eu velit ac lorem gravida dapibus. Nulla vitae leo aliquet, aliquet elit vitae,
+                                ullamcorper ipsum. Integer porttitor consequat diam, a blandit velit.</p>
+                        </div>
+
+                    </div>
+                    <div class="resultSpecific">
+                        <div class="resultEntry">
+                            <div class="resultAddress">1341 Main St W, Hamilton, ON L8S 1C6</div>
+                            <div class="resultSpecificRating">
+                                <img class="smallRating" src="images/1star.png" alt="1 star">
+                            </div>
+                        </div>
+                        <div class="resultEntry">
+                            <div class="resultAddress">1280 Main St W, Hamilton, ON L8S 4L8</div>
+                            <div class="resultSpecificRating">
+                                <img class="smallRating" src="images/5star.png" alt="5 stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="individual_sample.html">
+                <div class="resultBox">
+                    <div class="resultImg">
+                        <img src="images/sample-iced-coffee-3.png" class="displayImage" alt="Lctus Orci's Maecenas Mattis">
+                    </div>
+                    <div class="resultGeneral">
+                        <div class="resultName">
+                            <h3 class="resultH3">4. Maecenas Mattis</h3>
+                        </div>
+                        <div class="resultRestaurant">
+                            <h4 class="resultH4">Luctus Orci</h4>
+                        </div>
+                        <div class="resultGeneralRating">
+                            <img class="smallRating" src="images/2halfstar.png" alt="2 and a half stars">
+                        </div>
+                        <div class="resultDescription">
+                            <p>Aenean tincidunt sodales ex, pellentesque congue nibh tincidunt a. Nam vestibulum mollis
+                                volutpat. Donec aliquet turpis id erat pulvinar rutrum.</p>
+                        </div>
+
+                    </div>
+                    <div class="resultSpecific">
+                        <div class="resultEntry">
+                            <div class="resultAddress">1341 Main St W, Hamilton, ON L8S 1C6</div>
+                            <div class="resultSpecificRating">
+                                <img class="smallRating" src="images/5star.png" alt="5 stars">
+                            </div>
+                        </div>
+                        <div class="resultEntry">
+                            <div class="resultAddress">1280 Main St W, Hamilton, ON L8S 4L8</div>
+                            <div class="resultSpecificRating">
+                                <img class="smallRating" src="images/2star.png" alt="2 stars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class=footer>
+        <footer>
+            Created by Kwasi Apenteng 400020790 apenteng@mcmaster.ca
+            <a href="submission.html">Submit a review</a>
+        </footer>
+    </div>
+</body>
+
+</html>

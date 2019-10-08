@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Search</title>
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="homeBox">
+      <a href="search.html"><img class="home" src="images/logomain3.png" alt="SipSavvy Logo"></a></div>
+    <div class="headerBox">
+      <form class="headerForm" action="results_sample.html">
+        <input class="headerSearch" type="text" name="name" placeholder="Search By Drink Name"><input class="formSubmit"
+          type="submit" value="GO">
+      </form>
+      <a class="advanced" href="search.html">Advanced Search</a>
+    </div>
+    <div class="logBox">
+      <form class="regist" action="registration.html"><button id="SignUp" class="UserButton">Sign
+          Up</button></form>
+      <button id="Login" class="UserButton">Login</button>
+    </div>
+  </div>
+  <div class="content">
+    <div id="mainFormBox">
+      <h1>Advanced Search</h1>
+      <form action="results_sample.html">
+        <div>
+          <label for="DrinkForm">Drink Name:</label>
+          <input class="formText" id="DrinkForm" type="text" name="Drink">
+        </div>
+        <div>
+          <label for="DescriptionForm">Description:</label>
+          <input class="formText" id="DescriptionForm" type="text" name="descript">
+        </div>
+        <div>
+          <label for="NameForm">Restaurant Name:</label>
+          <input class="formText" id="NameForm" type="text" name="Name">
+        </div>
+        <label>Location:</label><br>
+        <input class="formText long" type="text" name="long" placeholder="Longitude"
+          pattern="^-?(180|1[0-7][0-9](\.[0-9]+)?|[1-9]?[0-9](\.[0-9]+)?)">
+        <input class="formText lat" type="text" name="lat" placeholder="Latitude"
+          pattern="^-?(90|[1-8][0-9](\.[0-9]+)?)">
+
+        <div class="RatingBox">
+          <label for="ratingForm">Rating:</label>
+          <select class="selectForm formSelect" id="ratingForm">
+            <option value="Any">Any</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Star</option>
+            <option value="3">3 Star</option>
+            <option value="4">4 Star</option>
+            <option value="5">5 Star</option>
+          </select>
+        </div>
+        <div class="CategoryBox">
+          <label for="CategoryForm">Drink Type:</label>
+          <select name="category" id="CategoryForm" class="selectForm formSelect">
+            <option value="0">All</option>
+            <option value="Coffee">Coffee</option>
+            <option value="Tea">Tea</option>
+            <option value="Soda">Soft Drink</option>
+            <option value="Juice">Juice/Smoothies</option>
+            <option value="Milkshake">Milkshakes</option>
+            <option value="Cold">Frozen Beverage</option>
+            <option value="Hot">Hot Beverage</option>
+            <option value="Alcoholic">Alcoholic</option>
+          </select>
+        </div>
+        <div class="PriceBox">
+          <label for="PriceForm">Price:</label>
+          <select name="price" id="PriceForm" class="selectForm formSelect">
+            <option value="Any">Any</option>
+            <option value="1">$</option>
+            <option value="2">$$</option>
+            <option value="3">$$$</option>
+          </select>
+        </div>
+        <input class="formSubmit filterSubmit" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <div class=footer>
+    <footer>
+      Created by Kwasi Apenteng 400020790 apenteng@mcmaster.ca
+      <a href="submission.html">Submit a review</a>
+    </footer>
+  </div>
+</body>
+
+</html>
