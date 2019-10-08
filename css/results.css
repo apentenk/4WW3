@@ -1,0 +1,113 @@
+.displayImage{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+  }
+  
+  .resultImg{
+    display: inline-block;
+    position: relative;
+    margin-right: 2%;
+  }
+  
+.resultGeneral{
+    position: relative;
+    height: 180px;
+    max-width: 60%;
+    vertical-align: top;
+    display: inline-block;
+  }
+  .resultBox{
+    margin-bottom: 10px;
+    min-height: 300px;
+    background: white;
+    border: 1px solid gray;
+    position: relative;
+    padding: 15px;
+  }
+  .resultSpecific{
+    position: relative;
+    width: 100%;
+  }
+  
+  .resultEntry{
+    padding-top: 5px;
+    margin-top: 2%;
+    border-top: 1px solid gray;
+  }
+  
+  .resultSpecificRating{
+    float: right;
+    padding-right: 25px;
+  }
+  .resultAddress{
+    padding-left: 4%;
+    display: inline-block;
+  }
+  .resultRestaurant{
+    display: inline;
+  }
+  .resultGeneralRating{
+    float: right;
+    padding-right: 4%;
+  }
+  .resultLocations{
+    position: relative;
+    float: right;
+  }
+  .filterOption{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+  }
+  .filterOptionOption{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+  }
+  .filterTitle{
+    margin-left: 15px;
+  }
+  .filterOption>p,h2{
+    padding-left: 15px;
+  }
+  .resultPageBox{
+    position: relative;
+  }
+  
+  #filterBox{
+    position: relative;
+    background:white;
+    display: block;
+    margin-top: 15px;
+    margin-left: 40px;
+    min-width: 225px;
+    float: left;
+    border: 1px solid gray;
+  }
+  #resultsBox{
+    position: relative;
+    background: transparent;
+    display: block;
+    margin-top: 15px;
+    min-width: 595px;
+    max-width: 700px;
+    margin-left: 30px;
+    float: left;
+  }
+  #navBox{
+    background:white;
+    top: 11%;
+    width: 93%;
+    height:3%;
+    padding-top: 1%;
+    padding-left: 7%
+  }
+  #mapBox{
+    position: relative;
+    display: inline-block;
+    top: 15px;
+    min-height: 400px;
+    min-width: 400px;
+  }
+  

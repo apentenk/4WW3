@@ -1,0 +1,250 @@
+/* Universal Tag CSS*/
+body{
+  position: relative;
+  top: 0;
+  background: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  max-height: fit-content;
+  overflow: auto;
+  padding-bottom: 25px;
+}
+
+h1{
+  color: rgb(99, 20, 0);
+  font-size: 50px;
+}
+
+h3,h4,p{
+  color: rgb(99, 20, 0);
+  display: inherit;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+
+/*Common Main Box*/
+.content{
+  position: relative;
+  width:100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: fit-content;
+  overflow: auto;
+}
+
+/*Header Design*/
+.home{
+  object-fit: contain;
+  height: 60px;
+  width: 155px;
+  margin-left: 10px;
+  display: block;
+}
+#header{
+  background-image:url("../images/headerBackground2.png");
+  border: thick;
+  box-shadow:0px 5px 10px rgb(0, 9 , 46);
+  height: 70px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  padding-top: 1%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.UserButton{
+  display: inline;
+  float: right;
+  height: 40px;
+  width: 90px;
+  border: black;
+  color: white;
+  margin: 5px;
+  background:rgb(255, 77, 0);
+  box-shadow:0px 5px 10px rgb(0, 9 , 46);
+}
+
+.formSubmit, .headerSearch{
+  margin:0;
+  border: 1px solid rgb(0,9,46);
+}
+
+.formSubmit{
+  width: 50px;
+  border-left: none;
+  background: rgb(255, 77, 0);
+  color: white;
+  height: 34px;
+  padding: 0;
+}
+#SignUp{
+  background:rgb(99, 20, 0);
+}
+
+.headerForm{
+  display: inline-block;
+  width:450px;
+  position: relative;
+  top:-25px
+}
+.headerSearch{
+  display: inline-block;
+  width:400px;
+  height: 32px;
+  border-right: none;
+  box-shadow: none;
+  padding: 0;
+}
+.advanced{
+  display:  inline-block;
+  background: transparent;
+  border: none;
+  position: relative;
+  top: -24px;
+}
+.homeBox{
+  display: inline-block;
+  margin-right: 15%;
+}
+.headerBox{
+  display: inline-block;
+  margin-right: 20%;
+}
+.logBox{
+  display: inline-block;
+}
+.regist{
+  display: inline;
+}
+
+/*Common Form Elements*/
+#Description{
+  border-bottom: 1px;
+  border: whitesmoke;
+}
+
+#mainFormBox{
+  width: 80%;
+  margin: 0 auto;
+  background:white;
+}
+.formSelect{
+  height: 32px ;
+  font-size: 15px;
+  width: 100%;
+  cursor: pointer;
+  border: rgb(0, 9 , 46);
+  box-shadow:0px 0px 2px rgb(0, 9 , 46);
+  background: white;
+  color: rgb(99, 20, 0);;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.formSelect::-ms-expand{  /*Changing the display for IE*/
+  display: none;
+}
+
+.formSelect:hover,
+.formSelect:focus{  /*Change the display on focus or hover*/
+  color: rgb(99, 20, 0);
+  background:whitesmoke;
+}
+
+.formText{
+  background: white;
+  color: rgb(99, 20, 0);
+  height: 32px;
+  font-size: 15px;
+  width: 99%;
+  border: rgb(0, 9 , 46);
+  box-shadow:0px 0px 2px rgb(0, 9 , 46);
+  margin-bottom: 15px;
+  padding-left: 1%;
+}
+.formText::placeholder{ /*Placeholder for Chrome*/
+color: rgb(99, 20, 0);
+}
+.formText::-ms-input-placeholder{ /*Placeholder for Internet Explorer*/
+  color: rgb(99, 20, 0);
+  }
+.formText:-ms-input-placeholder{ /*Placeholder for Firefox*/
+  color: rgb(99, 20, 0);
+}
+.formText:focus{/*Change display on focus*/
+  background: whitesmoke;
+}
+.long{
+  width: 48%;
+  margin-right: 1.5%;
+}
+.lat{
+  width: 48%;
+}
+.CategoryBox{
+  display: inline-block;
+  width:32%;
+  margin-right: 1.5%
+}
+.RatingBox{
+  display: inline-block;
+  width: 32%;
+  margin-right:1.5%; 
+}
+.PriceBox{
+  display: inline-block;
+  width:32%
+}
+.firstNameBox{
+  display: inline-block;
+  width: 49%;
+  margin-right: 1.5%;
+}
+.lastNameBox{
+  display: inline-block;
+  width: 49%;
+}
+.submitText{
+  width: 100%;
+  min-height: 100px;
+  overflow: auto
+}
+.filterSubmit{
+  margin: 5px auto;
+  display: inherit;
+  border-left: 1px solid rgb(0,9,46);
+}
+
+.ReviewBoxSubmit{
+  padding:0;
+}
+/*Common Product Information*/
+.mapImage{
+  object-fit: contain;
+  height: 400px;
+  width: 400px;
+  max-width: 100%;
+}
+.smallRating{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+}
+
+/*Footer Information*/
+.footer{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
