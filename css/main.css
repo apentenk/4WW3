@@ -77,12 +77,16 @@ a:visited{
 }
 
 .formSubmit{
-  width: 50px;
+  min-width: 50px;
   border-left: none;
   background: rgb(255, 77, 0);
   color: white;
   height: 34px;
   padding: 0;
+}
+.locationButton{
+  padding: 6px;
+  border: 1px solid rgb(0, 9 , 46);
 }
 #SignUp{
   background:rgb(99, 20, 0);
@@ -184,12 +188,10 @@ color: rgb(99, 20, 0);
   background: whitesmoke;
 }
 .long{
-  width: 48%;
+  width: 41.5%;
   margin-right: 1.5%;
 }
-.lat{
-  width: 48%;
-}
+
 .CategoryBox{
   display: inline-block;
   width:32%;
