@@ -8,19 +8,24 @@
 </head>
 
 <body>
+    <script src="js/main.js"></script>
     <div id="header">
         <div class="homeBox">
-            <a href="search.html"><img class="home" src="images/logomain3.png" alt="SipSavvy Logo"></a></div>
+            <a href="search.html">
+                <img class="home" src="images/logomain3.png" alt="SipSavvy Logo">
+            </a>
+        </div>
         <div class="headerBox">
             <form class="headerForm" action="results_sample.html">
-                <input class="headerSearch" type="text" name="name" placeholder="Search By Drink Name"><input
-                    class="formSubmit" type="submit" value="GO">
+                <input class="headerSearch" type="text" name="name" placeholder="Search By Drink Name"><input class="formSubmit" type="submit" value="GO">
             </form>
             <a class="advanced" href="search.html">Advanced Search</a>
         </div>
         <div class="logBox">
-            <form class="regist" action="registration.html"><button id="SignUp" class="UserButton">Sign
-                    Up</button></form>
+            <form class="regist" action="registration.html">
+                <button id="SignUp" class="UserButton">Sign Up
+                </button>
+            </form>
             <button id="Login" class="UserButton">Login</button>
         </div>
     </div>
@@ -30,22 +35,22 @@
             <form id=submitForm>
                 <div id="DrinkBox">
                     <label for="DrinkForm">Drink Name:</label>
-                    <input class="formText" id="DrinkForm" type="text" name="Drink">
+                    <input class="formText" id="DrinkForm" type="text" name="Drink" required>
                 </div>
                 <div id=Description>
                     <label for="DescriptionForm">Description:</label>
-                    <input class="formText" id="DescriptionForm" type="text" name="descript">
+                    <input class="formText" id="DescriptionForm" type="text" name="descript" required>
                 </div>
                 <div id="NameBox">
                     <label for="NameForm">Restaurant Name:</label>
-                    <input class="formText" id="NameForm" type="text" name="Name">
+                    <input class="formText" id="NameForm" type="text" name="Name" required>
                 </div>
                 <div id="LocationBox">
-                    <label>Location:</label><br>
-                    <input class="formText long" type="text" name="long" placeholder="Longitude"
-                        pattern="^-?(180|1[0-7][0-9](\.[0-9]+)?|[1-9]?[0-9](\.[0-9]+)?)">
-                    <input class="formText lat" type="text" name="lat" placeholder="Latitude"
-                        pattern="^-?(90|[1-8][0-9](\.[0-9]+)?)">
+                    <label>Location:</label>
+                    <br>
+                    <input id="long" class="formText long" type="text" name="long" placeholder="Longitude" pattern="^-?(180|1[0-7][0-9](\.[0-9]+)?|[1-9]?[0-9](\.[0-9]+)?)" required>
+                    <input id="lat" class="formText long" type="text" name="lat" placeholder="Latitude" pattern="^-?(90|[1-8][0-9](\.[0-9]+)?)" required>
+                    <button class="formSubmit locationButton" type="button" onclick="getLocation()">Get My Location</button>
                 </div>
                 <div class="RatingBox">
                     <label for="ratingForm">Rating:</label>
@@ -73,12 +78,12 @@
                 </div>
                 <div class="PriceBox">
                     <label for="PriceForm">Price:</label>
-                    <input class="formText" id="PriceForm" type="text" name="price" placeholder="0.00"
-                        pattern="^[0-9]\.[0-9]{2}">
+                    <input class="formText" id="PriceForm" type="text" name="price" placeholder="0.00" pattern="^[0-9]\.[0-9]{2}">
                 </div>
                 <div class="ReviewBoxSubmit">
-                    <label>Review:</label><br>
-                    <textarea class="submitText" name="review" form="submitForm" maxlength="500"></textarea>
+                    <label>Review:</label>
+                    <br>
+                    <textarea class="submitText" name="review" form="submitForm" maxlength="500" required></textarea>
                     <input class="formSubmit filterSubmit" type="submit" value="Submit">
                 </div>
             </form>

@@ -6,6 +6,8 @@
     <title>Pumpkin Cream Cold Brew</title>
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/drink.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -43,8 +45,7 @@
                     <div class="categoryTitle"><img class="reviewRating" src="images/4halfstar.png"
                             alt="4 and a half stars"> Coffee - $$</div>
                 </div>
-                <div class="drinkMap">
-                    <img src="images/map.png" class="mapImage" alt="map of your surrounding area">
+                <div id="drinkMap" class="drinkMap">
                 </div>
             </div>
             <div class="reviewsBox">
@@ -145,6 +146,7 @@
             <a href="submission.html">Submit a review</a>
         </footer>
     </div>
+    <script src="js/individual.js"></script>
 </body>
 
 </html>

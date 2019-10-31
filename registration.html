@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <script src="js/main.js"></script>
     <div id="header">
         <div class="homeBox">
             <a href="search.html"><img class="home" src="images/logomain3.png" alt="SipSavvy Logo"></a></div>
@@ -29,26 +30,30 @@
             <h1>Register for an Account</h1>
             <form id=submitForm>
                 <div class="firstNameBox">
-                    <label for="firstNameForm">First Name:</label>
+                    <label id="firstNameLabel" for="firstNameForm">First Name:</label>
                     <input class="formText" id="firstNameForm" type="text" name="firstName">
                 </div>
                 <div class="lastNameBox">
-                    <label for="lastNameForm">Last Name:</label>
+                    <label id="lastNameLabel" for="lastNameForm">Last Name:</label>
                     <input class="formText" id="lastNameForm" type="text" name="firstName">
                 </div>
                 <div id="emailBox">
-                    <label for="emailForm">Email:</label>
+                    <label id="emailLabel" for="emailForm">Email:</label>
                     <input class="formText" id="emailForm" type="email" name="email">
                 </div>
                 <div id=passwordBox>
-                    <label for="passwordForm">Passowrd:</label>
+                    <label id="passwordLabel" for="passwordForm">Password:</label>
                     <input class="formText" id="passwordForm" type="password" name="password">
                 </div>
+                <div id=passwordConfirmBox>
+                    <label id="confirmLabel" for="passwordConfirmForm">Confirm Password</label>
+                    <input class=" formText" id="passowrdConfirm" type="password" name="passwordConfrim">
+                </div>
                 <div id="dobBox">
-                    <label for="dobForm">Date of Birth:</label>
+                    <label id="dobLabel" for="dobForm">Date of Birth:</label>
                     <input class="formText" id="dobForm" type="date" name="dob">
                 </div>
-                <input class="formSubmit filterSubmit" type="submit" value="Submit">
+                <input class="formSubmit filterSubmit" type="submit" value="Submit" onclick="return validateRegistration()">
             </form>
         </div>
     </div>
